@@ -1,0 +1,98 @@
+/* SCSS Variables */
+$color-main: #e67e22;
+$color-background: #3498db;
+$section-background: #f0f0f0;
+$color-white: #fff;
+$color-red: #c0392b;
+$color-hover: #bdc3c7;
+$color-text: #2c3e50;
+
+/* Font Variables */
+$font-primary: 'Ruda', sans-serif;
+$font-secondary: 'Roboto Slab', serif;
+$font-size-large: 48px;
+$font-size-base: 16px;
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+body {
+    margin: 0; 
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: $font-size-base; 
+    line-height: 1.7;
+    font-family: $font-secondary;
+    color: #2c2c54;
+}
+
+section {
+    padding: 96px 0;
+}
+
+/* Navigation */
+nav {
+    background: $color-background;
+    padding-top: 12px;
+    padding-bottom: 12px; 
+}
+
+.navigation {
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            margin-right: 36px;
+            position: relative;
+            a {
+                text-decoration: none;
+            }
+            :hover {
+                color: $color-hover;
+            }
+        }
+
+        li:hover ul {
+            display: block;
+            text-align: center;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: $color-white;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-top: 12px;
+            li {
+                display: block;
+                margin-bottom: 12px;
+                text-decoration: none;
+                
+                z-index: 2;
+                a {
+                    color: $color-background;
+                    text-align: center;
+                    padding: 0 14px;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
