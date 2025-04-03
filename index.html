@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,82 +10,218 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-    <nav class="navigation">
-        <div class="container">
+    <header class="header">
+        <!-- <div class="container"> -->
+        <nav class="navigation">
             <ul>
                 <li><a href="#">Airbus</a>
                     <ul>
                         <li><a href="#">a320</a>
-                        
+
                         </li>
                         <li><a href="#">a330</a>
-                        
+
                         </li>
                         <li><a href="#">a350</a>
-                        
+
                         </li>
                         <li><a href="#">a380</a>
-                        
+
                         </li>
                     </ul>
                 </li>
                 <li><a href="#">Boeing</a>
                     <ul>
                         <li><a href="#">737</a>
-                        
+
                         </li>
                         <li><a href="#">757</a>
-                        
+
                         </li>
                         <li><a href="#">767</a>
-                        
+
                         </li>
                         <li><a href="#">777</a>
-                        
+
                         </li>
                         <li><a href="#">787</a>
-                        
+
                         </li>
                         <li><a href="#">747</a>
-                        
+
                         </li>
                     </ul>
                 </li>
                 <li><a href="#">Embraer</a>
                     <ul>
                         <li><a href="#">E170</a>
-                        
+
                         </li>
                         <li><a href="#">E175</a>
-                        
+
                         </li>
                         <li><a href="#">E190</a>
-                        
+
                         </li>
                         <li><a href="#">E195</a>
-                        
+
                         </li>
                     </ul>
                 </li>
                 <li><a href="#">Bombardier</a>
                     <ul>
                         <li><a href="#">CRJ200</a>
-                        
+
                         </li>
                         <li><a href="#">CRJ700</a>
-                        
+
                         </li>
                         <li><a href="#">CRJ900</a>
-                        
+
                         </li>
                         <li><a href="#">CRJ1000</a>
-                        
+
                         </li>
                     </ul>
                 </li>
             </ul>
+        </nav>
+        <section class="splash">
+            <div class="splash-inner">
+                <h1 class="title-section"><span>Airliners,</span> are awesome!</h1>
+                <h2 class="text-subtitle">Here you will be able to find some information about currently produced
+                    airliners</h2>
+                <a href="#" class="btn btn-one">click to learn more</a>
+            </div>
+        </section>
+        <!-- </div> -->
+    </header>
+    <section>
+        <div class="container">
+            <div class="box-wrapper">
+                <div class="box box1">
+                    <div class="title-section">Airbus</div>
+                    <div class="box-subtitle">European Aeronautic Defence and Space Company</div>
+                    <p>Airbus is a European aerospace corporation headquartered in Toulouse, France, and is one of the
+                        world’s largest aircraft manufacturers. Known for Airbus a380.</p>
+                    <a href="#" class="btn btn-two">click to learn more</a>
+                </div>
+                <div class="box box2">
+                    <div class="title-section">Boeing</div>
+                    <div class="box-subtitle">Boeing Commercial Airplanes</div>
+                    <p>Boeing is an American aerospace company headquartered in Arlington, Virginia, and is one of the
+                        largest manufacturers of commercial and defense aircraft. It produces a wide range of aircraft.
+                    </p>
+                    <a href="#" class="btn btn-three">click to learn more</a>
+                </div>
+                <div class="box box3">
+                    <div class="title-section">Embraer</div>
+                    <div class="box-subtitle">Empresa Brasileira de Aeronáutica S.A.</div>
+                    <p>Embraer is a Brazilian aerospace company based in São José dos Campos, specializing in regional
+                        and executive jets. It is best known for its E-Jet series, widely used all other the world.</p>
+                    <a href="#" class="btn btn-four">click to learn more</a>
+                </div>
+            </div>
         </div>
-    </nav>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h1 class="title-section">Our work</h1>
+            <div class="pictures-wrapper">
+                <div class="picture-wrapper">
+                    <div class="work-img">
+                        <img src="/image/airbus.jpg" alt="airbus">
+                    </div>
+                    <div class="work-text">
+                        <h2>Airbus</h2>
+                        <p>Airbus taking off</p>
+                        <div class="link-wrapper"><a href="#">read more</a></div>
+                    </div>
+                </div>
+                <div class="picture-wrapper">
+                    <div class="work-img">
+                        <img src="/image/boeing.jpg" alt="airbus">
+                    </div>
+                    <div class="work-text">
+                        <h2>Boeing</h2>
+                        <p>Boeing taking off</p>
+                        <div class="link-wrapper"><a href="#">read more</a></div>
+                    </div>
+                </div>
+                <div class="picture-wrapper">
+                    <div class="work-img">
+                        <img src="/image/bombardier.jpg" alt="boeing">
+                    </div>
+                    <div class="work-text">
+                        <h2>Embraer</h2>
+                        <p>Embraer taking off</p>
+                        <div class="link-wrapper"><a href="#">read more</a></div>
+                    </div>
+                </div>
+                <div class="picture-wrapper">
+                    <div class="work-img">
+                        <img src="/image/embraer.jpg" alt="embraer">
+                    </div>
+                    <div class="work-text">
+                        <h2>Bombardier</h2>
+                        <p>Bombardier taking off</p>
+                        <div class="link-wrapper"><a href="#">read more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        
+        <div class="form-wrapper">
+            
+            <div class="form-left">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your e-mail" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" rows="5" placeholder="Type your message here" required></textarea>
+                    <a href="#" class="btn btn-one">Submit</a>
+                </form>
+            </div>
+            <div class="form-right">
+                <div class="paragraph-one">
+                    <div class="text-subtitle">sales specialist</div>
+                    <p>dave dave</p>
+                </div>
+                <div class="paragraph-two">
+                    <div class="text-subtitle">address</div>
+                    <p>ul. Iksińskiego 10</p>
+                    <p>00-000 Lębork</p>
+                </div>
+                <div class="paragraph-three">
+                    <div class="text-subtitle">phone</div>
+                    <p>000-000-000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-icons">
+            <div class="footer-circle">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="footer-circle">
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="footer-circle">
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
